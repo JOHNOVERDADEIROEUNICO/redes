@@ -1,0 +1,85 @@
+Em 83 TCP/IP reinava, além da ARPANET outras redes foram surgindo, e todas essas rede usavam o mesmo protocolo de comunicação, essa união foi formando a internet, ou seja, a Internet é:
+
+A infraestrutura (cabos, protocolos, roteadores).
+
+O problema: Internet era difícil de usar 😬
+
+    Mesmo nos anos 80:
+
+    A Internet era usada só por pesquisadores
+
+    Ferramentas existentes:
+
+    FTP
+
+    Telnet
+
+    e-mail
+
+    Tudo baseado em texto e comandos
+
+    Não existia algo simples para:
+
+    navegar entre documentos
+
+    clicar em links
+
+    acessar informação visualmente.
+
+Para resolver isso surgiu a WEB:
+
+Surgimento da Web (1989–1991):
+    👨‍🔬 Tim Berners-Lee (CERN – Suíça)
+
+    Em 1989, Tim propôs um sistema para:
+
+        compartilhar documentos científicos
+
+        conectar informações por links
+
+    Ele criou 4 pilares fundamentais:
+
+    🔹 HTML
+
+        Linguagem para estruturar documentos
+
+    🔹 HTTP
+
+        Protocolo de comunicação entre cliente e servidor
+
+    🔹 URL
+
+        Endereço único para cada recurso
+
+    🔹 HTTP
+
+        É o protocolo fundamental da web, um conjunto de regras que permite a comunicação entre navegadores e servidores para transferir páginas web e outros recursos, funcionando como uma "linguagem" para solicitar e enviar dados como textos, imagens e vídeos através de requisições (como GET e POST) e respostas (com códigos de status), sendo a base para o acesso à internet, embora hoje seja frequentemente substituído por sua versão segura, HTTPS, que criptografa os dados para maior segurança.
+
+    📅 Em 1991, a World Wide Web foi disponibilizada publicamente
+
+Web ≠ Internet (diferença importante)
+Internet	/     Web
+Infraestrutura	 /   Serviço
+Baseada em TCP/IP /	Baseada em HTTP
+Existe desde os anos 70  /	Criada em 1989
+Suporta e-mail, FTP, etc  /	Usa páginas HTML
+
+👉 A Web roda sobre a Internet, mas não é a Internet.
+
+Popularização (anos 1990)
+
+1993: Navegador Mosaic
+
+1995 em diante:
+
+Internet comercial
+
+Sites, empresas, buscadores
+
+Evolução para:
+
+Web 1.0 (páginas estáticas)
+
+Web 2.0 (interação, redes sociais)
+
+Web moderna (apps, APIs, cloud)

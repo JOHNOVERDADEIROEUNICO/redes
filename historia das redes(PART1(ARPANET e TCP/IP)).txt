@@ -1,0 +1,235 @@
+Como já sabemos a guerra fria vai ser onde toda a internet se inicia, quando o sputnik é lançado pela união sovietica os estados unidos  com receio da possibilidade de ser uma arma de espionagem (o que sabemos hoje que não tem nada haver) cria  DARPA um iniciativa que inicialmente teve a ideia de transmitir atravez de redes telefonicas dados, inicialmente só se havia 4 pontos 2 bases militares e duas universidades que trabalharam em conjunto o MIT e UCLA, o nome dessa rede inicialmente foi a ARPANET.
+
+Porém temos um problema, os computadores dessa epoca não seguiam uma arquitetura padrão, dessa forma a comunição entre eles era impossível, para resolver isso criou_se o protocolo NCP que foi criado por volta do final dos anos 60, ele permitia ue computadores diferentes trocassem dados entre si.
+
+🧠 O que era o NCP
+
+O NCP (Network Control Protocol) era o protocolo usado na ARPANET para permitir que dois computadores se comunicassem.
+
+Ele pode ser visto como uma mistura do que hoje seria:
+
+Transporte (TCP)
+
+Aplicação
+
+➡️ Ainda não existia o conceito de camadas bem definidas como no modelo OSI/TCP-IP.
+
+Vamos a alguns detalhes sobre o NCP:
+
+🔌 Como a comunicação acontecia (passo a passo)
+1️⃣ Conexão lógica entre dois computadores
+
+    Antes de trocar dados, os computadores:
+
+    Estabeleciam uma conexão lógica
+
+    Cada lado sabia:
+
+    Quem estava se conectando
+
+    Qual serviço estava sendo acessado
+
+    Essa conexão se dava por cabos, através de linhas telefônicas dedicadas, conexões cabeadas, alugadas das operadoras.
+
+🏗️ Estrutura física da ARPANET:
+A. Computadores (Hosts)
+
+    Universidades e centros de pesquisa
+
+    Máquinas grandes (mainframes)
+
+B. IMPs (Interface Message Processors)
+
+    Eram os “roteadores” da época
+
+    Cada computador não se conectava direto a outro
+
+    Ele se conectava a um IMP
+
+    [Computador] — cabo — [IMP] — cabo — [IMP] — cabo — [Computador]
+
+
+💡 O IMP cuidava do:
+
+Envio de pacotes
+
+Reenvio em caso de erro
+
+Roteamento dentro da ARPANET
+
+⚠️ Não era como IP hoje — não existiam endereços IP.
+
+2️⃣ Uso de “sockets” primitivos
+
+    O NCP usava algo chamado:
+
+    Socket = (Host, Porta),(ponto final de comunicação (uma "tomada" virtual) que permite que dois processos, em computadores diferentes ou no mesmo, troquem dados, identificados por uma combinação única de endereço IP e número de porta.)
+
+    Exemplo conceitual:
+
+    Host A → Porta 5
+    Host B → Porta 3
+
+
+    📌 Cada porta representava um serviço (como login remoto ou transferência de arquivos).
+
+3️⃣ Comunicação full-duplex
+
+    A comunicação era:
+
+    Bidirecional
+
+    Com dois canais:
+
+    Um para envio
+
+    Outro para recebimento
+
+    Isso lembra bastante o TCP moderno.
+
+4️⃣ Controle de fluxo
+
+    O NCP implementava:
+
+    Controle de fluxo simples
+
+    Para evitar que um computador rápido “afogasse” um mais lento
+
+    💡 Ele fazia isso usando janelas de envio, mas de forma bem rudimentar.
+
+5️⃣ Envio dos dados
+
+    Os dados eram:
+
+    Divididos em mensagens
+
+    Encapsulados em pacotes da ARPANET
+
+    Entregues somente dentro da própria rede
+
+    🚫 Não havia roteamento entre redes diferentes.
+
+Um importante detalhe é que quando se tentava fazer a comunicação entre maquinas toda arede parava para que aquelas duas maquinas conversassem entre sí.
+
+Aí surge um grande probelma, poís em 72 a ARPANET saiu de 4 pra 15 pontos diferentes, e para que 2 de 15 mauinas se comunicassem, as outras 13 precisavam esperar para se comunicarem também.
+
+Nisso surge o TCP/IP.
+
+🧠 Visão geral
+
+NCP → funcionava apenas dentro da ARPANET
+
+TCP → foi criado para interligar redes diferentes
+
+💡 É aqui que nasce o conceito de internet (inter-network).
+
+🌐 O que o TCP trouxe de novo:
+1️⃣ Interligação de redes (a maior mudança)
+
+    O TCP foi pensado para:
+
+    Conectar redes diferentes
+
+    Com tecnologias diferentes
+
+    Com confiabilidade variável
+
+    📌 Daí o nome Internet Protocol Suite.
+
+2️⃣ Separação clara de responsabilidades
+
+    Antes (NCP):
+
+    Tudo misturado
+
+
+    Depois (TCP/IP):
+
+    Aplicação
+    TCP  → confiabilidade
+    IP   → endereçamento e roteamento
+
+
+    ✔️ Isso foi revolucionário.
+
+3️⃣ Endereçamento global (IP)
+
+    Com o TCP/IP:
+
+    Cada máquina tem um endereço IP
+
+    Independente da rede física
+
+    Possibilita alcance global
+
+    NCP:
+
+    Identificação era local à ARPANET
+
+4️⃣ Confiabilidade real (TCP)
+
+    O TCP passou a cuidar de:
+
+    ✔️ Confirmação de recebimento (ACK)
+
+    ✔️ Reenvio de pacotes perdidos
+
+    ✔️ Ordem correta dos dados
+
+    ✔️ Detecção de erros
+
+    ✔️ Controle de congestionamento
+
+    📌 No NCP isso era mínimo ou inexistente.
+
+5️⃣ Comunicação fim a fim (end-to-end)
+No TCP:
+
+    A confiabilidade é responsabilidade dos hosts
+
+    Não da rede intermediária
+
+Isso permite:
+
+    Redes simples no meio
+
+    Inteligência nas pontas
+
+🔁 Evolução: TCP vira TCP + IP
+
+Inicialmente:
+
+    TCP fazia tudo
+
+Depois:
+
+Ele foi dividido em:
+
+    IP (roteamento)
+
+    TCP (confiabilidade)
+
+    Essa decisão molda a internet até hoje.
+
+🧩 Impacto prático
+
+Graças ao TCP:
+
+Internet pôde crescer sem controle central
+
+Surgiram:
+
+Web
+
+Email
+
+Jogos online
+
+Cloud
+
+Streaming
+
+Tudo isso seria impossível com o NCP.
+
+Em resumo o TCP do lado de envio é responsável por quebrar em pedaços embalar e enderaçar os dados e o TCB do lado que recebe é responsável por junta e desenpacotar esses dados, porém se estiver faltando uma parte deste pacote ele é capz de reenviar uma requisição destes dados.
+
