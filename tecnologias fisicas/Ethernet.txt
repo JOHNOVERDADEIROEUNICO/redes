@@ -1,0 +1,37 @@
+Cabos de par trançado (Ethernet – cobre)
+
+São os mais comuns em redes locais (LAN), usados em casas, empresas e data centers.
+
+🔌 Como eles funcionam
+
+Transmitem dados usando sinais elétricos
+
+Possuem pares de fios de cobre trançados
+
+O trançamento reduz interferência eletromagnética (ruído)
+
+Cada par carrega sinais opostos (positivo/negativo), e o receptor interpreta a diferença entre eles, técnica chamada de transmissão diferencial.
+
+🧠 Por que trançar os fios?
+
+Reduz interferência externa
+
+Reduz interferência entre os próprios fios (crosstalk)
+
+📦 Tipos mais comuns
+Categoria /	Velocidade /	Distância
+Cat5e /	Até 1 Gbps /	100 m
+Cat6 /	Até 10 Gbps /	55–100 m
+Cat6a /	Até 10 Gbps /	100 m
+Cat7/8 /	Até 40 Gbps /	menor
+🔐 Tipos de blindagem
+
+UTP: sem blindagem (mais comum)
+
+FTP / STP: com blindagem (ambientes industriais)
+
+🧩 Conector
+
+RJ-45
+
+Usa padrões T568A ou T568B

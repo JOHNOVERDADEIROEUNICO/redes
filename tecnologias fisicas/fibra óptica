@@ -1,0 +1,200 @@
+Fibra óptica
+
+É a tecnologia mais moderna e eficiente 🚀
+
+💡 Como funciona
+
+Transmite dados usando luz, não eletricidade
+
+A luz “reflete” dentro da fibra por reflexão interna total
+
+Imune a interferência elétrica e magnética
+
+🧠 Por que é tão rápida?
+
+Luz sofre menos perda
+
+Frequências muito mais altas
+
+Não gera calor como o cobre
+
+Agora como a luz pode ser usada para transmissão de dados?
+
+1️⃣ A ideia central (bem simples)
+
+    👉 Dados são informação
+    👉 Informação pode ser representada por bits (0 e 1)
+    👉 Bits podem ser representados por luz ligada e desligada
+
+    Ou seja:
+
+    Luz acesa → 1
+
+    Luz apagada → 0
+
+    Isso acontece milhões ou bilhões de vezes por segundo.
+
+2️⃣ De onde vem essa luz?
+
+Dentro dos equipamentos de rede (ONU, SFP, switch, roteador), existe:
+
+    🔦 Laser ou LED (fonte de luz)
+
+    📟 Fotodiodo (sensor de luz)
+
+Fluxo básico:
+
+    Dados digitais → sinal elétrico → luz → fibra → luz → sinal elétrico → dados digitais
+
+3️⃣ Como a luz carrega informação?
+    🔹 Modulação
+
+    A informação é inserida na luz por modulação, que significa alterar alguma característica da luz.
+
+    As principais são:
+
+    1. Modulação por intensidade (mais comum)
+
+        Luz forte = 1
+
+        Luz fraca ou desligada = 0
+
+        Essa técnica é chamada de:
+
+        OOK (On-Off Keying)
+
+    É simples e muito usada em fibras comerciais.
+
+    2. Modulação mais avançada (redes modernas)
+
+    Em redes de alta capacidade, a luz pode variar:
+
+        Intensidade
+
+        Frequência
+
+        Fase
+
+        Polarização
+
+        Exemplos:
+
+        QPSK
+
+        QAM
+
+        PAM4 (muito comum em 100G+)
+
+        📌 Isso permite mais bits por pulso de luz, aumentando a velocidade.
+
+4️⃣ Como a luz “anda” dentro da fibra?
+🔬 Reflexão interna total
+
+A fibra é feita de:
+
+    Núcleo (onde a luz passa)
+
+    Casca (cladding)
+
+    A luz bate na interface e é refletida de volta, ficando “presa” dentro do núcleo.
+
+    📐 Isso acontece por causa do índice de refração.
+
+    ➡️ A luz percorre quilômetros praticamente sem escapar.
+
+5️⃣ Mas a luz não se mistura? 🤔
+
+    Boa pergunta!
+
+Problemas reais:
+
+    Dispersão (pulsos se alargam)
+
+    Atenuação (perda de potência)
+
+Soluções:
+
+    Fibra monomodo (menos dispersão)
+
+    Amplificadores ópticos (EDFA)
+
+    Correção de erros (FEC)
+
+    Lasers muito precisos
+
+6️⃣ Como vários dados passam na mesma fibra?
+    🌈 WDM – Multiplexação por comprimento de onda
+
+    A fibra pode transportar várias “cores” de luz ao mesmo tempo:
+
+    Vermelho → dados A
+
+    Azul → dados B
+
+    Verde → dados C
+
+    Cada cor é um canal independente.
+
+    📌 É assim que operadoras conseguem terabits por segundo em uma única fibra.
+
+7️⃣ Como o receptor entende os dados?
+
+    A luz chega ao fotodiodo
+
+    O fotodiodo gera corrente elétrica
+
+    Circuitos interpretam:
+
+        nível alto → 1
+
+        nível baixo → 0
+
+    Os bits são remontados em:
+
+        quadros Ethernet
+
+        pacotes IP
+
+        dados da aplicação
+
+8️⃣ Comparação rápida com cabo de cobre
+    Cobre /	Fibra
+    Elétrons se movem /	Fótons se movem
+    Interferência elétrica /	Imune a interferência
+    Mais calor /	Pouca perda
+    Limite físico menor /	Escala enorme
+
+9️⃣ Resumo em uma frase
+
+A luz transmite dados porque conseguimos controlá-la com extrema precisão, ligando, desligando ou alterando suas propriedades para representar bits, e guiá-la por longas distâncias dentro da fibra óptica.
+
+🔬 Tipos de fibra
+🔹 Fibra monomodo (SMF)
+
+    Núcleo muito fino (~9 µm)
+
+    Um único feixe de luz
+
+    Longas distâncias (km)
+
+    Usada por operadoras e backbones
+
+🔹 Fibra multimodo (MMF)
+
+    Núcleo maior (50 ou 62,5 µm)
+
+    Vários feixes de luz
+
+    Distâncias menores
+
+    Usada em prédios e data centers
+
+🔗 Conectores comuns
+
+SC
+
+LC
+
+ST
+
+FC

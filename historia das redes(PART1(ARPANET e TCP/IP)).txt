@@ -109,7 +109,7 @@ Roteamento dentro da ARPANET
 
     🚫 Não havia roteamento entre redes diferentes.
 
-Um importante detalhe é que quando se tentava fazer a comunicação entre maquinas toda arede parava para que aquelas duas maquinas conversassem entre sí.
+Um importante detalhe é que quando se tentava fazer a comunicação entre maquinas toda a rede parava para que aquelas duas maquinas conversassem entre sí.
 
 Aí surge um grande probelma, poís em 72 a ARPANET saiu de 4 pra 15 pontos diferentes, e para que 2 de 15 mauinas se comunicassem, as outras 13 precisavam esperar para se comunicarem também.
 

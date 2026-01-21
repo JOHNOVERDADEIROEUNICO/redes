@@ -1,0 +1,186 @@
+A internet atual funciona graças a um conjunto de protocolos (regras de comunicação) e tecnologias (meios físicos e lógicos) que trabalham em camadas. Vamos ver de forma progressiva cada parte:
+
+1️⃣ Modelo em camadas (base de tudo)
+
+    Hoje usamos, na prática, o modelo TCP/IP, que organiza a internet em 4 camadas:
+
+    Acesso à rede
+
+    Internet
+
+    Transporte
+
+    Aplicação
+
+    Cada camada tem protocolos específicos.
+
+2️⃣ Camada de Acesso à Rede (como os dados viajam fisicamente)
+Tecnologias
+
+    Ethernet (IEEE 802.3) – redes cabeadas
+
+    Wi-Fi (IEEE 802.11) – redes sem fio
+
+    Fibra óptica
+
+    4G / 5G
+
+    DSL / Cabo coaxial
+
+    Protocolos
+
+    ARP (Address Resolution Protocol)
+    → Descobre o endereço físico (MAC) de um dispositivo dentro da rede local.
+
+    PPP / PPPoE
+    → Usado por ISPs para autenticação de usuários.
+
+    📌 Aqui estamos falando do “fio”, do sinal de rádio ou da luz na fibra.
+
+3️⃣ Camada de Internet (endereçamento e roteamento)
+Protocolos essenciais
+
+    IP (Internet Protocol)
+
+    IPv4 (ex: 192.168.0.1)
+
+    IPv6 (ex: 2001:db8::1)
+
+    ICMP
+
+    Usado para mensagens de erro e diagnóstico
+
+    Exemplo: ping
+
+    IPsec
+
+    Criptografia e autenticação em nível de IP
+
+    📌 Essa camada decide para onde o pacote vai.
+
+4️⃣ Camada de Transporte (confiabilidade e controle)
+Protocolos principais
+
+    TCP (Transmission Control Protocol)
+
+    Confiável
+
+    Ordenado
+
+    Controle de erros
+
+    Exemplo: HTTP, HTTPS, FTP, e-mail
+
+    UDP (User Datagram Protocol)
+
+    Rápido
+
+    Sem garantia de entrega
+
+    Exemplo: jogos online, streaming, chamadas VoIP
+
+    QUIC
+
+    Baseado em UDP
+
+    Mais rápido que TCP
+
+    Muito usado pelo HTTP/3 (Google, YouTube, etc.)
+
+    📌 Aqui se define como os dados chegam.
+
+5️⃣ Camada de Aplicação (o que o usuário vê)
+Protocolos mais importantes hoje
+🌐 Web
+
+    HTTP/1.1
+
+    HTTP/2
+
+    HTTP/3
+
+    HTTPS (HTTP + TLS)
+
+    🔐 Segurança
+
+    TLS / SSL
+
+    Criptografia de dados
+
+    Cadeado do navegador
+
+    🌍 Nomes e endereços
+
+    DNS
+
+    Converte nomes em IP
+
+    google.com → 142.250.x.x
+
+    📧 E-mail
+
+    SMTP – envio
+
+    POP3 – download
+
+    IMAP – sincronização
+
+    📁 Arquivos
+
+    FTP / FTPS
+
+    SFTP
+
+    🎮 Tempo real
+
+    WebSocket
+
+    WebRTC
+
+6️⃣ Tecnologias fundamentais que sustentam a internet
+Infraestrutura
+
+    Data Centers
+
+    CDNs (Cloudflare, Akamai, Fastly)
+
+    Backbones de fibra óptica
+
+    IXPs (Pontos de troca de tráfego)
+
+    Conceitos importantes
+
+    NAT
+
+    Firewall
+
+    Proxy
+
+    Load Balancer
+
+    Cache
+
+7️⃣ Tecnologias modernas que você usa sem perceber
+
+    Cloud Computing (AWS, Azure, GCP)
+
+    Containers (Docker)
+
+    Orquestração (Kubernetes)
+
+    APIs REST / GraphQL
+
+    Microserviços
+
+    Edge Computing
+
+8️⃣ Resumo rápido (mapa mental)
+    Usuário
+    ↓
+    HTTP / HTTPS / DNS
+    ↓
+    TCP / UDP / QUIC
+    ↓
+    IP / ICMP
+    ↓
+    Ethernet / Wi-Fi / Fibra / 5G
