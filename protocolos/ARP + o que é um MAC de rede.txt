@@ -1,0 +1,86 @@
+🔹 ARP (Address Resolution Protocol)
+📌 O que é?
+
+O ARP é um protocolo usado dentro de redes locais (LAN) para descobrir qual endereço MAC corresponde a um endereço IP.
+
+👉 Em resumo:
+IP → quem é você fisicamente na rede?
+
+Curiosidade: Quando falamos MAC nos referimos a  endereço MAC (Media Access Control) é um identificador único gravado no hardware de cada placa de rede (Wi-Fi, Ethernet, Bluetooth) de um dispositivo, como um código de barras físico que permite que ele seja reconhecido em redes locais, sendo crucial para a comunicação e segurança de rede, geralmente exibido como uma sequência de 12 caracteres hexadecimais (ex: 00:1A:2B:3C:4D:5E).
+
+    Para que serve:
+        Identificação: Identifica um dispositivo específico dentro de uma rede local (LAN) para roteadores e switches.
+
+        Controle de Acesso: Permite que administradores de rede restrinjam ou liberem o acesso com base no MAC, como em filtros de MAC no roteador.
+
+        Diagnóstico: Ajuda a solucionar problemas de rede e a rastrear dispositivos. 
+
+    Como encontrar:
+        No Windows: Abra o Prompt de Comando (CMD) e digite ipconfig /all, procurando por "Endereço Físico" ou "Physical Address".
+
+        No macOS: Vá em Ajustes do Sistema > Geral > Sobre (ou similar), e procure pelas informações de Rede (Wi-Fi, Ethernet).
+
+        No Linux: Use o Terminal e digite ifconfig ou ip addr e procure por "ether" ou "HWaddr".
+        Em TVs e outros dispositivos: Geralmente em Configurações > Sistema/Rede > Sobre/Status, buscando pelo endereço MAC Wi-Fi/Ethernet.
+
+    Características:
+        Único: Não há dois dispositivos com o mesmo MAC.
+
+        Fixo (Geralmente): Gravado na fabricação, embora possa ser "spoofado" (falsificado) em alguns sistemas.
+
+        Formato: Seis pares de caracteres hexadecimais (0-9, A-F).
+        
+        Composição: Os três primeiros pares identificam o fabricante, e os três últimos o dispositivo específico;
+
+Voltando ao ARP...
+
+📍 Por que ele existe?
+
+Na prática:
+
+Os protocolos de rede (IP) trabalham com endereços IP
+
+O hardware (placa de rede) envia dados usando endereços MAC
+
+Então alguém precisa fazer essa “tradução”.
+
+🧠 Como o ARP funciona (passo a passo)
+
+Suponha:
+
+Seu PC: 192.168.1.10
+
+Gateway (roteador): 192.168.1.1
+
+    1.Seu PC quer enviar dados para 192.168.1.1
+
+    2.Ele pergunta na rede (broadcast):
+
+        “Quem tem o IP 192.168.1.1?”
+
+    3.O roteador responde:
+
+        “Sou eu! Meu MAC é AA:BB:CC:DD:EE:FF”
+
+    4.Seu PC guarda isso na tabela ARP
+
+    5.A partir daí, os pacotes IP são enviados encapsulados em quadros Ethernet para esse MAC
+
+🗂️ Tabela ARP
+
+É um cache temporário, algo como:
+
+IP	MAC
+192.168.1.1	AA:BB:CC:DD:EE:FF
+
+📌 Isso evita perguntar toda hora.
+
+⚠️ Importante sobre ARP
+
+Funciona apenas em redes locais
+
+Não atravessa a internet
+
+É essencial para Ethernet
+
+Não tem autenticação (por isso existe ARP Spoofing)

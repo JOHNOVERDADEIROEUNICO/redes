@@ -1,0 +1,122 @@
+📡 O que é Wi-Fi (IEEE 802.11)?
+
+Wi-Fi é uma tecnologia de rede sem fio (wireless) que permite que dispositivos se conectem à internet ou entre si usando ondas de rádio, sem cabos.
+
+O nome técnico é IEEE 802.11, que é o padrão criado pelo IEEE (Institute of Electrical and Electronics Engineers) e define como a comunicação sem fio deve funcionar.
+
+Resumindo:
+Wi-Fi = implementação comercial do padrão IEEE 802.11
+
+🧠 Como o Wi-Fi funciona, na prática?
+1️⃣ Ondas de rádio
+
+Em vez de fios, o Wi-Fi usa ondas eletromagnéticas (rádio), semelhantes às de rádio FM ou celular.
+
+    O roteador emite sinais
+
+    O celular/notebook escuta e responde
+
+    Tudo acontece pelo ar 
+    
+2️⃣ Frequências usadas
+
+O Wi-Fi opera principalmente em:
+
+Frequência /	Características
+2.4 GHz /	Maior alcance, mais interferência
+5 GHz /	Mais rápido, menor alcance
+6 GHz / (Wi-Fi 6E)	Muito rápido, pouco congestionado
+
+📌 Quanto maior a frequência → mais velocidade, porém menor alcance.
+
+3️⃣ Comunicação com o roteador (Access Point)
+
+O roteador Wi-Fi atua como um ponto de acesso (AP):
+
+Celular 📱  ))))   📡 Roteador   )))) 🌐 Internet
+Notebook 💻 ))))
+
+
+Ele:
+
+    Recebe dados dos dispositivos
+
+    Encaminha para a internet
+
+    E faz o caminho de volta
+
+🔄 Como os dados são transmitidos?
+🔹 Dados viram pacotes
+
+Assim como na internet cabeada:
+
+    Os dados são divididos em pacotes
+
+    Cada pacote é enviado pelo ar
+
+    O destino confirma o recebimento
+
+🔹 Meio compartilhado (CSMA/CA)
+
+Diferente do cabo, todos usam o mesmo “ar”.
+Então o Wi-Fi segue a lógica:
+
+    O dispositivo escuta o canal
+
+    Se estiver livre → transmite
+
+    Se estiver ocupado → espera
+
+    Evita colisões (CSMA/CA)
+
+📌 É como várias pessoas tentando falar em um walkie-talkie.
+
+🔐 Segurança no Wi-Fi
+
+Para evitar que qualquer um “escute” seus dados:
+
+    WEP ❌ (obsoleto e inseguro)
+
+    WPA / WPA2 🔐
+
+    WPA3 🔒 (mais seguro atualmente)
+
+Esses protocolos:
+
+    Criptografam os dados
+
+    Exigem senha
+
+    Protegem contra 
+    
+📶 Padrões Wi-Fi (802.11)
+Nome comum /	Padrão /	Velocidade
+Wi-Fi 4 /	802.11n /	até 600 Mbps
+Wi-Fi 5 /	802.11ac /	até 3.5 Gbps
+Wi-Fi 6 /	802.11ax /	mais rápido e eficiente
+Wi-Fi 6E /	802.11ax (6 GHz) /	menos interferência
+Wi-Fi 7 /	802.11be /	latência baixíssima
+
+⚙️ Por que o Wi-Fi pode ficar lento?
+
+Alguns vilões clássicos:
+
+    Muitas redes no mesmo canal
+
+    Distância do roteador
+
+    Paredes e obstáculos
+
+    Muitos dispositivos conectados
+
+    Interferência (micro-ondas, Bluetooth 😅)
+
+🎯 Resumo rápido
+
+✔ Wi-Fi é uma tecnologia de rede sem fio
+✔ Baseada no padrão IEEE 802.11
+✔ Usa ondas de rádio para transmitir dados
+✔ Funciona por pacotes e canal compartilhado
+✔ Possui criptografia para segurança
+
+Para saber como a maquina consegue interpretar um sinal eletromagnetico que vem do ar confira na pasta tecnologias fisicas a explicação sobre o dispositivo ADC

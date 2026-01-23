@@ -1,0 +1,120 @@
+Como a máquina consegue entender ondas? Essa é a pergunta inical para entender este aparelho que iremos falar sobre, vamos um pouco antes ver sobre como a máquina(PC, celular e etc..) entende as ondas.
+
+🌊 Como uma máquina “entende” ondas?
+
+Curta e direta:
+    👉 ela não entende ondas diretamente
+    👉 ela entende variações elétricas
+
+As ondas eletromagnéticas viram sinais elétricos, e aí sim o computador entende.
+
+📡 Passo a passo (do ar ao bit)
+1️⃣ A onda chega na antena
+
+A onda de rádio que está “no ar” atinge a antena do dispositivo.
+
+📌 A antena é feita justamente para:
+
+    Captar aquela frequência específica
+
+    Converter a onda eletromagnética em corrente elétrica oscilante
+
+Ou seja:
+
+Onda no ar 🌊 → Antena → Sinal elétrico ⚡
+
+2️⃣ Variações elétricas representam dados
+
+Esse sinal elétrico:
+
+    Sobe e desce de tensão
+
+    Oscila em determinada frequência
+
+    Tem variações controladas
+
+Essas variações não são aleatórias — elas seguem regras chamadas modulação.
+
+🎼 Modulação: o “idioma” das ondas
+
+Para enviar dados, o transmissor modula a onda portadora.
+
+Alguns exemplos simples:
+
+Tipo  /	O que muda  /	Exemplo
+AM  /	Amplitude  /	Rádio AM
+FM  /	Frequência  /	Rádio FM
+QAM  /	Amplitude + Fase  /	Wi-Fi
+
+📌 No Wi-Fi moderno (802.11):
+
+Usa QAM (Quadrature Amplitude Modulation)
+
+Cada variação representa vários bits ao mesmo tempo
+
+Exemplo mental:
+Amplitude + Fase = 1011
+Outra combinação = 0100
+
+
+Ou seja:
+👉 uma única onda carrega vários bits
+
+
+🧠 3️⃣ Do analógico para o digital
+
+O sinal elétrico ainda é analógico.
+Aí entra um componente crucial:
+
+🔹 ADC (Conversor Analógico-Digital)
+
+Ele:
+
+    Mede o sinal elétrico
+
+    Amostra em intervalos regulares
+
+    Converte para números (0s e 1s)
+
+Sinal analógico ⚡ → ADC → Bits (101010)
+
+
+Agora sim o computador entende.
+
+🧩 4️⃣ Decodificação e correção de erros
+
+Depois que vira bits, o sistema:
+
+Aplica algoritmos matemáticos
+
+Verifica erros (CRC, FEC)
+
+Reordena pacotes
+
+Descarta dados corrompidos
+
+📌 Por isso o Wi-Fi funciona mesmo com ruído!
+
+🧠 Analogia simples (bem intuitiva)
+
+Imagine:
+
+    A onda é uma música
+
+    A antena é o microfone
+
+    O sinal elétrico é o som no fio
+
+    O ADC é o ouvido + cérebro
+
+    Os bits são a letra da música escrita
+
+A máquina não “ouve” a música — ela mede padrões.
+
+⚙️ Em resumo
+
+✔ Ondas atingem a antena
+✔ A antena gera um sinal elétrico
+✔ A modulação define o significado
+✔ O ADC transforma em números
+✔ O sistema interpreta os bits

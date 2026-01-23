@@ -1,0 +1,128 @@
+todo dispositivo que usa wi-fi precisa de uma antena, vamos ver um pouco sobre elas em maquinas.
+
+📡 Computadores têm antenas?
+
+👉 SIM. Todo dispositivo Wi-Fi precisa de antena.
+Sem antena, não existe comunicação sem fio.
+
+O que varia é:
+
+Formato
+
+Quantidade
+
+Posicionamento
+
+Qualidade
+
+💻 Tipos de antena em computadores
+🔹 1️⃣ Notebooks (antena interna)
+
+Nos notebooks:
+
+    As antenas ficam escondidas
+
+    Normalmente nas bordas da tela
+
+    São tiras metálicas bem finas
+
+📌 Por que na tela?
+
+    Fica longe de componentes que geram ruído
+
+    Melhor campo de recepção
+
+Geralmente existem:
+
+    2 ou mais antenas (MIMO)
+
+    Uma para transmitir e outra para receber
+
+🔹 2️⃣ PCs desktop
+
+Depende do tipo:
+
+✔ Placa-mãe com Wi-Fi
+
+    Tem antenas externas rosqueáveis
+
+    Ficam atrás do gabinete
+
+    Algumas vêm com base magnética
+
+✔ Placa Wi-Fi PCIe
+
+    Antenas grandes e externas
+
+    Melhor alcance e estabilidade
+
+📌 Antena externa = melhor recepção 📶
+
+🔹 3️⃣ Adaptadores USB Wi-Fi
+
+    Pequenos → antena interna (alcance limitado)
+
+    Grandes → antena externa
+
+Por isso aquele adaptador USB minúsculo:
+👉 funciona, mas não faz milagre 😅
+
+🔄 O sinal captado é diferente?
+
+👉 Não. O princípio é o mesmo.
+
+Em TODOS os casos:
+
+Onda eletromagnética → Antena → Sinal elétrico → ADC → Bits
+
+
+O que muda é:
+
+    Eficiência da antena
+
+    Sensibilidade do receptor
+
+    Quantidade de antenas
+
+📶 MIMO e diversidade de antenas
+
+Computadores modernos usam MIMO:
+
+    Múltiplas antenas
+
+    Vários fluxos de dados simultâneos
+
+    Melhor velocidade e estabilidade
+
+Exemplo:
+
+    2×2 MIMO → 2 antenas
+
+    4×4 MIMO → 4 antenas
+
+📌 Não é só “mais sinal”, é mais inteligência no uso das ondas.
+
+⚠️ Por que às vezes o sinal no notebook é pior?
+
+Alguns motivos comuns:
+
+    Antena muito pequena
+
+    Posição do notebook
+
+    Mão cobrindo a borda da tela
+
+    Interferência interna
+
+    Material da carcaça (metal atrapalha)
+
+Já reparou que mudar o notebook de posição melhora o Wi-Fi?
+👉 Isso é física pura em ação.
+
+🧠 Resumo rápido
+
+✔ Computadores possuem antenas
+✔ Notebooks usam antenas internas escondidas
+✔ Desktops geralmente usam antenas externas
+✔ O processo de captação é o mesmo
+✔ Antenas melhores = sinal melhor

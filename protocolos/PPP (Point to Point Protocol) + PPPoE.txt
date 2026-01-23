@@ -1,0 +1,254 @@
+🔹 PPP (Point-to-Point Protocol)
+📌 O que é?
+
+O PPP é um protocolo usado para criar uma conexão direta ponto-a-ponto entre dois dispositivos.
+
+Exemplo clássico:
+
+    Computador ↔ Provedor
+
+    Roteador ↔ ISP
+
+🧠 Para que o PPP serve?
+
+Ele cuida de:
+
+    Autenticação (usuário/senha)
+
+    Negociação de IP
+
+    Compressão
+
+    Detecção de erros
+
+Ou seja, ele cria a sessão de conexão, diferente do ARP que só resolve endereços.
+
+🧱 PPP atua em qual camada?
+
+Atua na Camada 2 (Enlace) do modelo OSI
+
+Transporta pacotes IP
+
+🧩 Protocolos dentro do PPP
+
+    LCP → negocia a conexão
+
+    PAP / CHAP → autenticação
+
+    NCP → define IP, DNS etc.
+
+🔹 PPPoE (PPP over Ethernet)
+📌 O que é?
+
+O PPPoE é o PPP encapsulado dentro do Ethernet.
+
+👉 Ele permite que o PPP funcione em redes Ethernet modernas.
+
+🧠 Por que o PPPoE foi criado?
+
+Antes:
+
+    PPP era usado em linhas telefônicas (discada)
+
+Hoje:
+
+    ISPs usam Ethernet/fibra
+
+    Precisam de:
+
+        Login e senha
+
+        Controle de usuários
+
+        Sessão individual
+
+➡️ PPPoE resolve isso.
+
+🔁 Como funciona o PPPoE
+
+1.Seu roteador envia um PPPoE Discovery
+
+2.O servidor do provedor responde
+
+3.Autenticação com usuário/senha
+
+4.O provedor atribui:
+
+    IP público
+
+    DNS
+
+    Gateway
+
+📌 Tudo isso ocorre antes do tráfego normal da internet.
+
+Exemplo:
+Seu roteador
+   ↓ (PPPoE)
+Servidor do provedor
+   ↓ (IP)
+Internet
+
+Agora uma duvida que pode surgir é: como o protocolo PPPoE e encapsulado dentro de um cabo Ethernet?
+
+🧩 Ideia principal (resumo rápido)
+
+👉 PPPoE não “vai no cabo” diretamente.
+Ele é encapsulado em quadros Ethernet, que fisicamente são sinais elétricos (ou luz, no caso da fibra).
+
+A hierarquia é:
+    Cabo Ethernet
+    ↳ Sinal elétrico
+        ↳ Quadro Ethernet
+            ↳ PPPoE
+                ↳ PPP
+                    ↳ IP
+                        ↳ TCP/UDP
+                            ↳ Dados
+
+🔹 O que significa “encapsular”?
+
+Encapsular = colocar um protocolo dentro do outro, como caixas:
+
+📦 Dados
+📦 TCP
+📦 IP
+📦 PPP
+📦 PPPoE
+📦 Ethernet
+📦 Sinal elétrico no cabo
+
+Cada camada não sabe como a outra funciona internamente — só carrega.
+
+🔹 Estrutura real de um quadro Ethernet com PPPoE
+
+Um quadro Ethernet tem esta estrutura:
+
+┌───────────────┬───────────────┬─────────┬───────────────┬─────────┐
+│ MAC Destino   │ MAC Origem    │ Type    │ Dados         │ FCS     │
+└───────────────┴───────────────┴─────────┴───────────────┴─────────┘
+OBS: caso sua tela não esteja full screen pode ser que o desenho qebre.
+
+Quando usamos PPPoE:
+
+    O campo Type = 0x8863 (Discovery) ou 0x8864 (Session)
+
+    O campo Dados contém o pacote PPPoE
+
+🔹 Dentro do PPPoE
+
+O campo Dados do Ethernet carrega:
+
+┌──────── PPPoE Header ────────┐
+│ Vers │ Type │ Code │ Sess ID │
+│ Length                      │
+└─────────────────────────────┘
+┌──────── PPP Frame ──────────┐
+│ Protocol │ Payload          │
+└─────────────────────────────┘
+
+
+📌 Ou seja:
+
+    Ethernet → carrega PPPoE
+
+    PPPoE → carrega PPP
+
+🔹 Dentro do PPP
+
+O PPP é quem realmente carrega o IP:
+
+┌──── PPP Header ────┐
+│ Protocol (0x0021) │ → IP
+└───────────────────┘
+┌──── IP Packet ────┐
+│ IP Header + Data  │
+└───────────────────┘
+
+
+Exemplo de protocolos PPP:
+
+    0x0021 → IPv4
+
+    0x0057 → IPv6
+
+    0xC021 → LCP
+
+🔹 Do quadro ao cabo (parte física)
+
+Depois que o quadro Ethernet está pronto:
+
+    1.Ele vira bits (0 e 1)
+
+    2.Esses bits viram sinais elétricos
+
+    3.Os sinais trafegam pelos pares do cabo Ethernet
+
+🔹 Descoberta PPPoE (antes da sessão)
+
+Antes de existir IP, ocorre o PPPoE Discovery, também encapsulado em Ethernet:
+
+    Etapa: /	O que acontece:
+
+    PADI /	Cliente procura servidor PPPoE
+    PADO /	Servidor responde
+    PADR /	Cliente solicita sessão
+    PADS /	Sessão criada
+
+Tudo isso:
+
+    Sem IP
+
+    Usando apenas MAC + Ethernet
+
+📌 No caso de fibra óptica, os bits viram pulsos de luz.
+
+🔹 Importante: impacto no tamanho do pacote (MTU)
+
+O PPPoE adiciona 8 bytes extras.
+
+    Ethernet padrão: MTU 1500
+
+    PPPoE: MTU 1492
+
+📌 Isso evita fragmentação de pacotes IP.
+
+🔹 Visualização completa (fluxo real)
+
+Quando você acessa um site:
+
+    [ Dados HTTP ]
+        ↓
+    [ TCP ]
+        ↓
+    [ IP ]
+        ↓
+    [ PPP ]
+        ↓
+    [ PPPoE ]
+        ↓
+    [ Ethernet ]
+        ↓
+    [ Sinal no cabo ]
+
+🔹 Comparação rápida
+Tecnologia: /	O que carrega IP:
+
+Ethernet + DHCP /	IP direto no Ethernet
+PPPoE /	IP dentro do PPP
+VPN /	IP dentro de IP
+
+
+No provedor, o processo ocorre ao contrário (desencapsulamento).
+
+Resumo:
+Esses protocolos trabalham juntos:
+
+    PPPoE cria sua conexão com o provedor
+
+    IP permite comunicação global
+
+    ARP permite comunicação local
+
+    TCP/UDP transportam os dados
+
