@@ -1,0 +1,134 @@
+📶 O que são 3G, 4G, 5G…?
+
+Eles são gerações de tecnologia de rede móvel celular.
+
+👉 O número indica a geração
+👉 Cada nova geração traz:
+
+    Mais velocidade
+
+    Menor latência
+
+    Mais capacidade
+
+    Novas aplicações
+
+Ou seja:
+
+2G → 3G → 4G → 5G → (6G no futuro)
+
+🧠 Por que “rede celular”?
+
+Porque o território é dividido em células:
+
+    Cada célula tem uma antena (ERB)
+
+    Seu celular se conecta à mais próxima
+
+    Ao se mover, ocorre o handover (troca automática de antena)
+
+📡📡📡
+📱➡️📡➡️📡➡️📡 (sem você perceber)
+
+📜 O que cada geração faz?
+🔹 2G (GSM / EDGE) – anos 90
+
+📞 Foco em chamadas e SMS
+
+    Voz digital
+
+    Internet MUITO lenta
+
+    WhatsApp hoje? Nem sonhar 😅
+
+😅
+
+🔹 3G – internet no celular
+
+🌐 Primeira internet “de verdade” no mobile
+
+    Navegação básica
+
+    Redes sociais
+
+    Vídeos em baixa qualidade
+
+📌 Tecnologias: UMTS / HSPA
+
+Velocidade média:
+➡️ ~1 a 10 Mbps
+
+🔹 4G (LTE) – internet rápida
+
+🚀 Mudou tudo
+
+    Streaming (YouTube, Netflix)
+
+    Jogos online
+
+    Chamadas via internet (VoLTE)
+
+📌 LTE = Long Term Evolution
+📌 Já é praticamente “Wi-Fi pelo ar”
+
+Velocidade:
+➡️ 50 a 300 Mbps
+(pode passar disso em condições ideais)
+
+🔹 5G – baixa latência e escala
+
+⚡ Não é só velocidade
+
+Além de ser mais rápido, o 5G traz:
+
+    Latência baixíssima
+
+    Milhões de dispositivos conectados
+
+    Alta confiabilidade
+
+Velocidade:
+➡️ 1 a 10 Gbps (teórico)
+
+Latência:
+➡️ ~1 ms (vs ~30–50 ms do 4G)
+
+🤖 Para que o 5G realmente serve?
+
+Não é só celular:
+
+    🚗 Carros autônomos
+
+    🏥 Cirurgias remotas
+
+    🎮 Cloud gaming
+
+    🏭 Indústria 4.0
+
+    🌆 Cidades inteligentes
+
+    📡 IoT (sensores, câmeras, medidores)
+
+📊 Comparação rápida
+Geração /	Velocidade /	Latência /	Uso típico
+2G /	kbps /	Alta /	Ligações, SMS
+3G /	Mbps /	Média /	Internet básica
+4G /	100+ / Mbps /	Baixa	Streaming, apps
+5G /	Gbps /	Muito baixa /	IoT, tempo real
+
+❓ Por que meu 5G às vezes parece lento?
+
+Porque:
+
+    Nem todo 5G é “5G puro”
+
+    Muitas operadoras usam 5G DSS (divide com 4G)
+
+    Distância da antena
+
+    Obstáculos
+
+    Muitos usuários conectados
+
+📌 O “5G real” (Standalone + mmWave) ainda está em expansão.
+
